@@ -1,0 +1,18 @@
+[project]
+name = "personas-api"
+version = "0.1.0"
+description = "CRUD API for personas using FastAPI and SQLite"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "sqlalchemy",
+]
+
+[project.optional-dependencies]
+dev = [
+    "httpx",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
